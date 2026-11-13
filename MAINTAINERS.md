@@ -9,6 +9,8 @@ contribute; you don't need to be a maintainer or work at Thomson Reuters to open
 | Gianfranco Romani  | [@GianRomani](https://github.com/GianRomani)                   |
 | Amine Boudraa      | [@amine-boudraa](https://github.com/amine-boudraa)             |
 | Ruchita Kshirsagar | [@RuchitaKshirsagarTR](https://github.com/RuchitaKshirsagarTR) |
+| Nicolai Nielsen    | [@NicolaiNielsenTR](https://github.com/NicolaiNielsenTR)       |
+| Adam Drews         | [@AdamDrewsTR](https://github.com/AdamDrewsTR)                 |
 
 Every pull request is reviewed by at least one maintainer (see
 [CONTRIBUTING.md](CONTRIBUTING.md#how-pull-requests-are-reviewed)). `.github/CODEOWNERS` requests that review
