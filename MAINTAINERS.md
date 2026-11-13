@@ -3,14 +3,15 @@
 Maintainers review and merge pull requests, triage issues, cut releases and keep this project welcoming. Anyone can
 contribute; you don't need to be a maintainer or work at Thomson Reuters to open an issue or a pull request.
 
-| Name               | GitHub                                                         |
-| ------------------ | -------------------------------------------------------------- |
-| Yassine Ilmi       | [@yilmi](https://github.com/yilmi)                             |
-| Gianfranco Romani  | [@GianRomani](https://github.com/GianRomani)                   |
-| Amine Boudraa      | [@amine-boudraa](https://github.com/amine-boudraa)             |
-| Ruchita Kshirsagar | [@RuchitaKshirsagarTR](https://github.com/RuchitaKshirsagarTR) |
-| Nicolai Nielsen    | [@NicolaiNielsenTR](https://github.com/NicolaiNielsenTR)       |
-| Adam Drews         | [@AdamDrewsTR](https://github.com/AdamDrewsTR)                 |
+| Name               | GitHub                                                               |
+| ------------------ | -------------------------------------------------------------------- |
+| Yassine Ilmi       | [@yilmi](https://github.com/yilmi)                                   |
+| Gianfranco Romani  | [@GianRomani](https://github.com/GianRomani)                         |
+| Amine Boudraa      | [@amine-boudraa](https://github.com/amine-boudraa)                   |
+| Ruchita Kshirsagar | [@RuchitaKshirsagarTR](https://github.com/RuchitaKshirsagarTR)       |
+| Nicolai Nielsen    | [@NicolaiNielsenTR](https://github.com/NicolaiNielsenTR)             |
+| Adam Drews         | [@AdamDrewsTR](https://github.com/AdamDrewsTR)                       |
+| Stathi C.          | [@ChronosMasterOfAllTime](https://github.com/ChronosMasterOfAllTime) |
 
 Every pull request is reviewed by at least one maintainer (see
 [CONTRIBUTING.md](CONTRIBUTING.md#how-pull-requests-are-reviewed)). `.github/CODEOWNERS` requests that review
