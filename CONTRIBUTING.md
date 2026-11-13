@@ -27,7 +27,7 @@ issue.
 | ------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
 | Typo, docs, small bug fix, test                                     | Nothing: open a pull request.                                                            |
 | An issue labelled `good first issue` or `help wanted`               | Comment on the issue, then open a pull request.                                          |
-| New feature, new scanner, new MCP tool, refactor, dependency change | Start an Idea in Discussions, or open a feature request, and agree the approach with a maintainer before writing the code. |
+| New feature, new scanner, new MCP tool, refactor, dependency change | Start an Idea in Discussions and agree the approach with a maintainer before writing the code. |
 
 Agreeing first saves you from building something we can't merge: maintainers may close feature pull requests that have
 no agreed issue, and will point you to one. [MAINTAINERS.md](MAINTAINERS.md) lists who to ask.

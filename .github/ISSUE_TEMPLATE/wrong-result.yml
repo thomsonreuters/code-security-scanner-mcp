@@ -1,0 +1,87 @@
+name: 🎯 Wrong scanner result
+description: A false positive, a false negative, a wrong severity or wrong remediation guidance.
+title: "[Wrong result]: "
+labels: ["wrong-result", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for helping make the results more accurate. Paste only a minimal snippet that you are allowed to share:
+        never confidential code, credentials or customer data. If the result reveals a vulnerability in this project
+        itself, follow the [security policy](https://github.com/thomsonreuters/code-security-scanner-mcp/blob/main/SECURITY.md)
+        instead.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options:
+        - False positive (reported, but not a real issue)
+        - False negative (a real issue that was not reported)
+        - Wrong severity
+        - Wrong or unhelpful remediation guidance
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which scanner or component produced the result.
+      options:
+        - scanner-sast
+        - scanner-sca
+        - knowledge
+        - optimization
+        - other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: rule
+    attributes:
+      label: Rule or vulnerability type
+      description: The rule ID, CWE or vulnerability type shown in the result, for example "python/Sqli" or "sql_injection".
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: Language and framework
+      placeholder: "Python 3.12, Flask"
+    validations:
+      required: true
+
+  - type: textarea
+    id: snippet
+    attributes:
+      label: Minimal snippet or manifest
+      description: The smallest code or dependency manifest that reproduces the result.
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+      description: What you expected the scanner or the remediation guidance to say, and what it said.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `code-security-scan --version`, and the scanner version if you know it.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: The snippet contains no confidential code, credentials or customer data.
+          required: true
