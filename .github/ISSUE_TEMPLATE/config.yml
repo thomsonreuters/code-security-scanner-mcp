@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💡 Feature idea
+    url: https://github.com/thomsonreuters/code-security-scanner-mcp/discussions/categories/ideas?discussions_q=is%3Aopen+category%3AIdeas+sort%3Atop
+    about: Share an idea or upvote existing ones in Discussions. The most-wanted ideas feed the roadmap.
+  - name: 🙋 Question
+    url: https://github.com/thomsonreuters/code-security-scanner-mcp/discussions/categories/q-a
+    about: Ask about installing, configuring or using the scanner in Q&A.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/thomsonreuters/code-security-scanner-mcp/security/advisories/new
+    about: Report vulnerabilities in this project privately, never in a public issue.

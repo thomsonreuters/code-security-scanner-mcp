@@ -7,3 +7,7 @@ Shared by the Thomson Reuters team at **AGNTCon + MCPCon Europe 2026** as part o
 **Get notified when we launch:** Select **Watch → Custom → Releases** at the top of this page, then **Apply**. We'll publish a GitHub Release here when the code is available.
 
 Also watch our companion repository: [Security Remediation Agents](https://github.com/thomsonreuters/security-remediation-agents).
+
+**Want to help?** Read [CONTRIBUTING.md](CONTRIBUTING.md) for how contributions work and [MAINTAINERS.md](MAINTAINERS.md)
+for who reviews them. Questions and ideas are welcome in
+[Discussions](https://github.com/thomsonreuters/code-security-scanner-mcp/discussions).

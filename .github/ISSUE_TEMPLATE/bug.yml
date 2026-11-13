@@ -1,0 +1,89 @@
+name: 🐛 Bug report
+description: Report reproducible unexpected behavior in Code Security Scanner MCP.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not report suspected vulnerabilities here. Report them privately through the [security policy](https://github.com/thomsonreuters/code-security-scanner-mcp/security/policy) instead.
+        Remove credentials, personal data, proprietary source code, and private findings from every field.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Describe what you observed and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest set of steps or command that reproduces the problem.
+      render: shell
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Select the component most closely related to the problem.
+      options:
+        - cli
+        - mcp-server (tools, resources, prompts, transports)
+        - scanner-sast
+        - scanner-sca
+        - knowledge
+        - telemetry
+        - optimization
+        - packaging
+        - benchmarks
+        - ci
+        - docs
+        - other / not sure
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Provide the release version or commit you ran.
+      placeholder: "0.3.13 or a1edfaa"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the operating system, Python version, and installation method.
+      placeholder: "macOS 15, Python 3.12, installed with uv tool"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client or AI assistant
+      options:
+        - Cline
+        - GitHub Copilot
+        - Claude Code
+        - Cursor
+        - Windsurf
+        - Other / not applicable
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or traceback
+      description: Paste only the relevant output after removing secrets, personal data, source code, and private paths.
+      render: shell
+    validations:
+      required: false

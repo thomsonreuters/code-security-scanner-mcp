@@ -1,0 +1,88 @@
+title: "[Idea]: "
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for sharing an idea. Check the [roadmap](https://github.com/thomsonreuters/code-security-scanner-mcp/discussions/2)
+        first: if your idea is already there, add your use case as a comment on it. Never paste confidential code,
+        credentials or customer data, and report security vulnerabilities privately through the
+        [security policy](https://github.com/thomsonreuters/code-security-scanner-mcp/security/policy) instead.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the project does this idea touch?
+      options:
+        - Scanners (SAST, SCA, IaC)
+        - Optimizer (choosing where to fix)
+        - Fix quality and data flow
+        - Vulnerability types
+        - Knowledge base and remediation guidance
+        - Vulnerability chains
+        - MCP tools, resources and prompts
+        - Setup, packaging and docs
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What are you trying to do, and what gets in the way today?
+      placeholder: "When my assistant fixes an XSS finding, it escapes the value in the wrong place and breaks the page..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What should Code Security Scanner MCP do? Describe the behavior, not the implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Your setup
+      description: Languages, frameworks, scanners or repository sizes this matters for.
+      placeholder: "Python and TypeScript monorepo, about 40 services, Django and Express"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client or AI assistant
+      multiple: true
+      options:
+        - Claude Code
+        - Cursor
+        - Cline
+        - GitHub Copilot
+        - Windsurf
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered
+      description: Workarounds you use today, or other tools that already do this.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before posting
+      options:
+        - label: I checked the roadmap and existing ideas for the same request.
+          required: true
+        - label: This post contains no confidential code, credentials or customer data.
+          required: true
+        - label: I'd like to help build this.
+          required: false
