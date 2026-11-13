@@ -1,0 +1,82 @@
+title: "[Question]: "
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Ask anything about installing, configuring or using Code Security Scanner MCP. Search existing answers first;
+        when your question is answered, mark the reply as the answer so others find it. Never paste confidential code,
+        credentials, tokens or customer data, and report security vulnerabilities privately through the
+        [security policy](https://github.com/thomsonreuters/code-security-scanner-mcp/security/policy).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to do, and what do you need to know?
+      placeholder: "How do I point the SCA scan at one manifest in a monorepo?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What you tried
+      description: Commands, configuration or prompts you used, and what happened.
+      render: text
+    validations:
+      required: false
+
+  - type: dropdown
+    id: scanner
+    attributes:
+      label: Scanner
+      options:
+        - Snyk Code (SAST)
+        - Snyk Open Source (SCA)
+        - Both
+        - Not sure or not relevant
+    validations:
+      required: false
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: MCP client or AI assistant
+      multiple: true
+      options:
+        - Claude Code
+        - Cursor
+        - Cline
+        - GitHub Copilot
+        - Windsurf
+        - Other
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: Version and environment
+      description: Output of `code-security-scan --version`, your operating system and Python version.
+      placeholder: "0.3.14, macOS 15, Python 3.12"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or output
+      description: Remove tokens, internal hostnames and file paths you can't share before pasting.
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before posting
+      options:
+        - label: I searched existing questions and the documentation.
+          required: true
+        - label: This post contains no confidential code, credentials or customer data.
+          required: true
